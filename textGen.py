@@ -57,9 +57,9 @@ for food in food_list:
         prompt = random.choice(prompt_template_variations).format(food=food)
         
         # Dynamically adjust sampling parameters for variety
-        temperature = random.uniform(0.7, 1.2)  # Random temperature between 0.7 and 1.2
-        top_k = random.choice([30, 50, 100])    # Random top_k from 30, 50, or 100
-        top_p = random.uniform(0.8, 1.0)        # Random top_p between 0.8 and 1.0
+        temperature = random.uniform(0.7, 1.05)  # Random temperature between 0.7 and 1.2
+        top_k = 30    # Random top_k from 30, 50, or 100
+        top_p = 0.8       # Random top_p between 0.8 and 1.0
         repetition_penalty = random.uniform(1.1, 1.3)  # Random repetition penalty between 1.1 and 1.3
         
         # Generate a new short story (sentence) for the current food with dynamic sampling
