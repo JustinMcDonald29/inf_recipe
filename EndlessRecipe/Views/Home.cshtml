@@ -1,0 +1,12 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Home>
+@{
+    Layout = "Main.cshtml";
+}
+
+@* @if (Model?.PageContent?.Count() > 0)
+{
+    foreach (var content in Model.PageContent)
+    {
+        @await Html.PartialAsync($"Partials/EndlessRecipe/{content.Content.ContentType.Alias}", content.Content, new ViewDataDictionary(ViewData) { { "name", Model.Name } })
+    }
+} *@

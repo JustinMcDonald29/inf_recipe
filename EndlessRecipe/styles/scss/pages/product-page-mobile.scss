@@ -1,0 +1,312 @@
+.product-page-mobile{
+    box-sizing: border-box;
+    overflow: hidden;
+    
+    .wrapp-mobile{
+        display: flex;
+        flex-direction: column;
+        padding: 74px 16px;
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 100%;
+        
+    }
+    .user-path{
+        padding-top: 16px;
+    }
+    .product-page-mobile-block{
+        padding-top: 24px;
+    }
+    .product-page-mobile-title{
+        color: #F5F5F5;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 64px;
+    }
+    .product-page-mobile-info-panel{
+        display: flex;
+        width: 100%;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        flex-direction: row;
+        border-width: 0.5px;
+        border-top:0.5px solid #EDCD94 ;
+        border-bottom:0.5px solid #EDCD94 ;
+    }
+    .product-page-mobile-info-panel{
+
+        .product-page-mobile-info-panel-title.title {
+            color: #EDCD94;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        .product-page-mobile-info-panel-title{
+            color: #f5f5f5;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+    .product-page-mobile-item-info{
+        display: flex;
+        flex-direction: column;
+        margin-top: 8px;
+
+        .product-page-mobile-item-img-silder{
+            display: flex;
+            gap: 5px;
+            flex-direction: row;
+            align-items: center;
+        }
+        .product-page-mobile-price-buy{
+            display: flex;
+            flex-direction: column;
+            margin-top: 43px;
+
+            .price{
+                color: #EDCD94;
+                font-family: Montserrat;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+            .priceAmount{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .buttonText{
+                color: #211F20;
+                font-weight: 500;
+            }
+            .amountSelector{
+                width: 102px;
+                height: 32px;
+                color: var(--White, #F5F5F5);
+                font-family: Montserrat;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;  
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                gap: 25px;
+                background-color: #2F2C2D;
+                border-radius: 4px;
+            }
+        }
+        .item-mobile-info{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            box-sizing: border-box;
+            width: 100%;
+
+            .item-mobile-info-title{
+                color: #f5f5f5;
+                font-family: Montserrat;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+            .textDescription{
+                width: 100%;
+                box-sizing: border-box;
+                margin-bottom: 40px;
+                .text{
+                    color: #f5f5f5;
+                    font-family: Montserrat;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+        }
+        .item-mobile-features{
+            display: flex;
+            flex-direction:column;
+            gap: 8px;
+            width: 100%;
+            box-sizing: border-box;
+            gap: 27px;
+
+            .item-mobile-features-title{
+                color: #f5f5f5;
+                font-family: Montserrat;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+            .item-mobile-features-col{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                gap: 12px;
+
+                span:first-child{
+                    flex-basis: 35%;
+                }     
+                span:last-child{
+                    flex-basis: 65%;
+                }         
+            }
+            .item-mobile-features-row{
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                justify-content: space-between;
+
+                color: #f5f5f5;
+                font-family: Montserrat;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+            .details {
+                display: flex;
+                flex-direction: column;
+                
+            }
+        }
+        .relatedWrappMobile{
+            display: flex;
+            flex-direction: column;
+
+            .similar-item-mobile-title{
+                color: #f5f5f5;
+                font-family: Roboto Slab;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+            .item-card-mobile{
+                display: flex;
+                flex-direction: column;
+                box-sizing: border-box;
+                position: relative;
+                margin-top: 16px;
+                width: 136px;
+                height: 164px;
+                background-color: #2F2C2D;
+                padding: 16px 0px 16px 8px;
+                border-radius: 4px;
+            }
+            .item-card-mobile-img{
+                display: flex;
+                justify-content: center;
+            }
+            .flag{
+                position: absolute;
+                left: 112px;
+                top: 8px;
+            }
+            .item-card-img{
+                width: 50px;
+                height: 60px;
+
+            }
+            .item-card-mobile-content-title-type{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+            .item-card-mobile-content-title{
+                color: #f5f5f5;
+                font-family: Montserrat;
+                font-size: 11px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+            .item-card-mobile-content{
+              margin-top: 8px;
+            }
+            .item-card-mobile-content-price-bag{
+                display: flex;
+                margin-top: 18px;
+            }
+            .item-card-mobile-content-type{
+                color: #EDCD94;
+                font-family: Montserrat;
+                font-size: 11px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+            .item-card-mobile-content-price-bag{
+                display: flex;
+                flex-direction: row;
+                gap: 47px;
+            }
+            .item-card-mobile-content-price{
+                color: #F5F5F5;
+                font-family: Montserrat;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+            .bag-mobile{
+                width: 16px;
+                height: 16px;
+            }
+        }
+        .show-more-btn-content{
+            display: flex;
+            align-self: center;
+            padding: 16px;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            border-radius: 0px;
+            border: 1px solid #EDCD94;
+            background: rgba(28, 28, 28, 0.50);
+        }
+        .show-more-btn-text{
+            color: #EDCD94;
+            font-family: Montserrat;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+        .pagination-block{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            box-sizing: border-box;
+            gap:12px;
+            .pagination{
+                display: flex;
+               justify-content: center;
+               padding: 4px 9px;
+                width: 24px;
+                height: 24px;
+                border-radius: 2px;
+                background-color: #4B4742;
+            }
+            .pagination-text{
+               color: #EDCD94;
+            }
+        }
+    }
+}

@@ -1,0 +1,193 @@
+﻿.contact-block {
+    display: flex;
+    gap: 80px;
+    margin-bottom: 80px;
+    padding: 0 40px;
+
+    .contact-block__info {
+        width: 262px;
+        text-align: left;
+    }
+
+    .contact-block__mail {
+        display: flex;
+        flex-direction: column;
+        gap: 56px;
+        margin-bottom: 100px;
+    }
+
+    .contact-block__title {
+        display: flex;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24.38px;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .contact-block__text {
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24.38px;
+
+        span {
+            color: #EDCD94;
+        }
+    }
+
+    .phone-email-text .contact-block__text {
+        font-size: 24px;
+    }
+
+    .contact-block__tg img {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 20px;
+    }
+
+    .contact-block__tg-qr {
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    .contact-block__form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    .contact-block__form-title {
+        font-family: Roboto Slab;
+        font-size: 48px;
+        font-weight: 500;
+        margin-bottom: 82px;
+        text-align: center;
+    }
+
+    .contact-block__form-inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 95px;
+        margin-bottom: 100px;
+
+        > div {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 116px;
+        }
+    }
+
+    textarea {
+        width: 100%;
+        height: 153px;
+        background: transparent;
+        border: 0.5px solid var(--White, #F5F5F5);
+        padding: 8px;
+        color: var(--Gray, #A6A5A4);
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    input {
+        max-width: 100%;
+        height: 38px;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        outline: none;
+        background: transparent;
+        flex-grow: 1;
+    }
+
+    .input_wrapper {
+        display: flex;
+        align-items: center;
+        height: 38px;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        padding: 0 8px 14px 8px;
+
+        input {
+            border: none;
+        }
+    }
+
+    .input_wrapper img {
+        width: 24px;
+        height: 20px;
+    }
+
+    .pnone-first-num {
+        height: 24px;
+        color: var(--Gray, #A6A5A4);
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .button {
+        width: 400px;
+    }
+
+
+    .form-of-communication {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form-of-communication.form-of-communication-img {
+        flex-grow: 1;
+        background-image: url("../../assets/images/contact-bg-thx.svg");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        background-position-y: 40%;
+    }
+
+    .form-of-communication-img-title {
+        color: var(--White, #F5F5F5);
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .form-of-communication-img-subtitle {
+        color: var(--White, #F5F5F5);
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    input,
+    .input_wrapper,
+    .contact-information__address {
+        transition: border-color 0.3s ease-in-out;
+    }
+
+    input.error,
+    .input_wrapper:has(.error),
+    .contact-information__address:has(input.error) {
+        border-color: #D12040;
+    }
+}

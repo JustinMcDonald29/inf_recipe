@@ -1,0 +1,90 @@
+﻿.text-body-m {
+    font-weight: $medium;
+    font-size: 14px;
+    line-height: 18px;
+    color: $text-color;
+}
+
+.text-body-m--bold {
+    font-weight: $bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: $text-color;
+}
+
+.text-body-lg {
+    font-weight: $medium;
+    font-size: 16px;
+    line-height: 24px;
+    color: $text-color;
+}
+
+.text-body-lg--bold {
+    font-weight: $bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: $text-color;
+}
+
+.text-caption-m {
+    font-weight: $medium;
+    font-size: 14px;
+    line-height: 14px;
+    color: $text-color;
+}
+
+.text-caption-m--bold {
+    font-weight: $bold;
+    font-size: 14px;
+    line-height: 14px;
+    color: $text-color;
+}
+
+.text-caption-sm {
+    font-weight: $medium;
+    font-size: 13px;
+    line-height: 13px;
+    color: $text-color;
+}
+
+.text-caption-sm--bold {
+    font-weight: $bold;
+    font-size: 13px;
+    line-height: 13px;
+    color: $text-color;
+}
+
+.heirline-ld {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: $text-color;
+}
+
+.heirline-sm {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    color: $text-color;
+}
+
+.text-btn-m {
+    font-weight: $bold;
+    font-size: 16px;
+    line-height: 16px;
+    color: $text-color;
+}
+
+.text-btn-sm {
+    font-weight: $bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: $text-color;
+}
+
+@media screen and (max-width: 560px) {
+    .text-body-m--bold,
+    .text-body-m {
+        font-size: 12px;
+    }
+}

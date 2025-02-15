@@ -1,0 +1,228 @@
+.basket {
+    padding-top: 166px;
+
+    .content-col {
+        padding-top: 40px;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .main-title {
+        margin-top: 8px;
+        margin-bottom: 32px;
+        font-family: Roboto Slab;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 31.65px;
+        text-align: left;
+    }
+
+    .main__user-products {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 62px;
+    }
+
+    .products__list {
+        flex: 0 0 574px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .products__list-item {
+        max-width: 390px;
+        display: flex;
+        gap: 8px;
+        position: relative;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17.07px;
+        text-align: left;
+
+        img {
+            width: 134px;
+            height: 132px;
+            object-fit: contain;
+        }
+
+        .list-item__remove-btn {
+            position: absolute;
+            right: 0;
+            top: -2px;
+            cursor: pointer;
+
+            img {
+                width: 10px;
+                height: 10px;
+            }
+        }
+
+        h4, a {
+            margin-bottom: 28px;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17.07px;
+            text-align: left;
+            color: #f5f5f5;
+            text-decoration: none;
+        }
+
+        .list-item__price {
+            margin-bottom: 38px;
+            color: #EDCD94;
+        }
+
+        .list-item__count-wrapper {
+            display: flex;
+            width: 42px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .list-item__count-btn {
+            padding: 2px 4px;
+            cursor: pointer;
+        }
+    }
+
+    .products__submit-form {
+        flex: 0 0 644px;
+        padding: 48px 80px;
+        background-color: #2F2C2D;
+        //styleName: H7;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24.38px;
+        text-align: left;
+
+        b {
+            font-weight: 600;
+        }
+
+        p {
+            font-weight: 400;
+        }
+
+        .submit-form__info {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 32px;
+            padding: 0 8px;
+
+            &:last-child {
+                margin-bottom: 42px;
+            }
+        }
+
+        .submit-form__info-sum {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding: 0 8px;
+            padding-top: 40px;
+            border-top: 1px solid #E5E5E5;
+            margin-bottom: 80px;
+            font-size: 24px;
+            font-weight: 600;
+
+            b:last-child {
+                color: #EDCD94;
+            }
+        }
+
+        button {
+            width: 100%;
+
+            &:first-child {
+                margin-bottom: 16px;
+            }
+
+            &:last-child {
+                border: none;
+            }
+        }
+    }
+
+    .relatedWrapp {
+        width: 100%;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 68px;
+    }
+
+    .relatedWrappTitle {
+        color: #F5F5F5;
+        /* H7 */
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 40px;
+    }
+
+    .relatedProductsCont {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 330px;
+    }
+
+    .basket-empty {
+        display: flex;
+        min-height: 500px; //kostil
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h1 {
+            font-family: Roboto Slab;
+            font-size: 48px;
+            font-weight: 500;
+            line-height: 63.3px;
+            text-align: left;
+        }
+
+        p {
+            font-family: Montserrat;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24.38px;
+            text-align: center;
+            margin-top: 32px;
+        }
+
+        .basket-empty__icon {
+            position: relative;
+            width: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .basket-empty__text {
+                position: absolute;
+                top: 107px;
+                width: 100%;
+                font-family: Montserrat;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 29.26px;
+                text-align: center;
+                text-decoration: none;
+                color: #EDCD94;
+            }
+        }
+    }
+}

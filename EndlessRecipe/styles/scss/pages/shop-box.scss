@@ -1,0 +1,102 @@
+.shop-box-page {
+
+    .filtherWrapp {
+        margin-right: 61px;
+    }
+
+    .box-list-wrapp {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .box-list {
+        display: flex;
+        width: 955px;
+        flex-direction: column;
+    }
+
+    .box-item-img {
+        display: flex;
+        width: 280px;
+        height: 330px;
+        padding: 16px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .button {
+        margin: 0;
+    }
+
+    .button:hover {
+        background-color: #EDCD94;
+        transition: 300ms;
+    }
+
+    .box-item-img:hover {
+        transition: 300ms;
+        background-color: #2F2C2D;
+    }
+
+    .box-item-img:hover img {
+        transform: scale(1.1);
+        transition: transform 1s ease;
+    }
+
+    .box-item-price-btn {
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        width: 632px;
+    }
+
+    .box-item-content {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+    }
+
+    .box-item-title {
+        color: var(--White, #F5F5F5);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .box-item-price {
+        color: #F5F5F5;
+        font-family: Roboto Slab;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .box-item {
+        width: 930px;
+        height: 330px;
+        display: inline-flex;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .box-title {
+        color: #F5F5F5;
+        font-family: Roboto Slab;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .button-filter {
+        margin-top: 32px;
+    }
+
+}

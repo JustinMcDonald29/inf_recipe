@@ -1,0 +1,45 @@
+﻿.form-component__select-input {
+
+    .select-input__wrapper {
+        box-sizing: border-box;
+        padding: 12px 16px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 259px;
+        border-radius: 4px;
+        border: 1px solid #D8D8D8;
+        margin-bottom: 16px;
+        color: #F5F5F5;
+        /* Н8 */
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .fp-select__mobile-wp.fp-select-search {
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+    }
+
+    @media screen and (max-width: 960px) {
+        .fp-select__mobile-wp {
+            max-height: 0px;
+            overflow: hidden;
+            transition: $transition-03;
+        }
+    }
+
+
+    .fp-select__wrapper.open-wrapper .fp-select__mobile-wp {
+        max-height: 300px;
+        overflow-y: auto;
+
+        .fp-select__dropdown {
+            transform: translateY(0);
+        }
+    }
+}

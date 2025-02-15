@@ -1,0 +1,50 @@
+﻿@using Microsoft.AspNetCore.Http.Extensions;
+
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Home>
+@{
+    //var headerLinks = Model.BHeaderLinks?.ToList() ?? new List<BPageLink>();
+    //var currentPath = Context.Request.GetEncodedPathAndQuery().ToLowerInvariant();
+
+    var siteUrl = Model.Url(null, UrlMode.Absolute);
+    // var currentMember = await MemberManager.GetCurrentMemberAsync();
+}
+<div class='header-container' x-data="headerContol">
+    <header class='header'>
+        <div class='header_container'>
+@*             @if (currentMember != null && await MemberManager.IsInRoleAsync(currentMember, "admin"))
+            {
+                <div class='nav_wrapper'>
+                    @foreach (var link in Model.HeaderLinksAdmin ?? [])
+                    {
+                        <a href="@link.Url" class='nav_link nav_link__separator'>
+                            @link.Name
+                        </a>
+                    }
+                </div>
+            }else
+            {
+                <div class='nav_wrapper'>
+                    @foreach(var link in Model.HeaderLinks ?? [])
+                    {
+                        <a href="@link.Url" class='nav_link nav_link__separator'>
+                            @link.Name
+                        </a>
+                    }
+                </div>
+            }
+            @if(currentMember != null)
+            {
+                
+            <div class='nav_wrapper'>
+                    <a class='nav_link nav_link__separator loginName'>
+                    @currentMember.UserName
+                </a>
+                    <a class='nav_link nav_link__separator' x-on:click="logout">
+                    Logout
+                </a>
+            </div>
+            } *@
+
+        </div>
+    </header>
+</div>

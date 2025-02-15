@@ -1,0 +1,234 @@
+﻿.parcking {
+    color: black;
+    box-sizing: border-box;
+
+    h2 {
+        margin-bottom: 24px;
+    }
+
+    .parcking__wrapper {
+        display: flex;
+        gap: 20px;
+    }
+
+    .parcking__scheme {
+        display: flex;
+        background: #EEEDEB;
+        border: 1px solid gray;
+        border-radius: 15px;
+    }
+
+    .scheme-col {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .scheme-item {
+        width: 300px;
+        height: 120px;
+        background: #C5D3E8;
+        border: 1px solid gray;
+        border-radius: 15px;
+        margin: 12px;
+    }
+
+    .scheme__col-road {
+        width: 120px;
+        background: #505050;
+        margin: 12px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .scheme__row-road {
+        height: 120px;
+        width: 100%;
+        background: #505050;
+        display: flex;
+        align-items: center;
+        margin: 12px 0;
+    }
+
+    .scheme__col-road-exit--top {
+        align-items: flex-start;
+
+        &::after {
+            transform: rotate(90deg);
+        }
+    }
+
+    .scheme__col-road-exit--bottom {
+        align-items: flex-end;
+
+        &::after {
+            transform: rotate(-90deg);
+        }
+    }
+
+    .scheme__row-road-exit--left {
+        justify-content: flex-start;
+    }
+
+    .scheme__row-road-exit--right {
+        justify-content: flex-end;
+
+        &::after {
+            transform: rotate(180deg);
+        }
+    }
+
+
+    .scheme__col-road-exit--top::after,
+    .scheme__col-road-exit--bottom::after,
+    .scheme__row-road-exit--left::after,
+    .scheme__row-road-exit--right::after {
+        content: ">";
+        font-size: 48px;
+        display: block;
+        height: 48px;
+        width: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    .scheme__col-road-exit--top {
+        margin-top: 0px;
+    }
+
+    .scheme__col-road-exit--bottom {
+        margin-bottom: 0px;
+    }
+
+    .scheme-item {
+        font-size: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .scheme-item--booked {
+        background: #9B4444;
+        cursor: not-allowed;
+        pointer-events: none;
+    }
+
+    .scheme-item--booked-current {
+        background: #D0E8C5;
+        cursor: default;
+    }
+
+    .item-time__wrapper {
+        display: flex;
+        flex-direction: column;
+        font-size: 24px;
+        margin-left: 12px;
+    }
+
+    .item-time__wrapper.admin {
+        font-size: 16px !important;
+    }
+
+    .user-booked {
+        font-size: 16px !important;
+    }
+
+
+
+    .item-cancel {
+        color: black;
+        width: 80px;
+        padding: 6px;
+        height: 30px;
+        border-radius: 15px;
+        border: 1px solid gray;
+        background: #FFF8DE;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        pointer-events: all;
+        margin-left: 12px;
+
+        p {
+            font-size: 16px;
+            height: fit-content;
+            line-height: 14px;
+        }
+    }
+
+    .parcking__menu-wrapper {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgb(0, 0, 0, 0.4);
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+
+
+        .parcking__menu {
+            width: 300px;
+            padding: 15px;
+            border: 1px solid gray;
+            border-radius: 15px;
+            background: #c5d3e8;
+            padding: 40px 20px;
+            height: fit-content;
+        }
+
+        .parcking__menu {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        h2 {
+            font-size: 48px;
+            text-align: center;
+            margin: 16px;
+        }
+
+        h3 {
+            text-align: center;
+            font-size: 28px;
+        }
+
+
+        .button-wrapper {
+            margin-top: 24px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .button {
+            font-size: 16px;
+        }
+
+        .parcking__menu-sum p {
+            margin-bottom: 16px;
+        }
+    }
+
+    .title-wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        .legend-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            margin-bottom: 12px;
+            span {
+                width: 14px;
+                height: 14px;
+                display: inline-block;
+                border: 0.5px solid gray;
+            }
+        }
+    }
+}

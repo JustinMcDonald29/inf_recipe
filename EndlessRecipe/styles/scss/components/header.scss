@@ -1,0 +1,113 @@
+.header-container {
+    background: #211f20;
+
+
+    .header_container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 1440px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 24px 80px;
+    }
+
+
+    .header {
+        display: flex;
+        background: rgba(28, 28, 28, 0.50);
+        box-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.10);
+        -webkit-backdrop-filter: saturate(180%) blur(8px);
+        backdrop-filter: saturate(180%) blur(8px);
+    }
+
+    .logo {
+        width: 150px;
+        height: 86px;
+    }
+
+    .nav_wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .nav_link {
+        cursor: pointer;
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration: none;
+    }
+
+    .nav_link:hover {
+        color: #EDCD94;
+        transition: 300ms;
+    }
+
+    .nav_link__separator {
+        margin-right: 50px;
+    }
+
+    .options_wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .option_container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .option_separator {
+        margin-right: 40px;
+        position: relative;
+    }
+
+    .option_text {
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .option_container__products-nums {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border-radius: 100px;
+        background-color: #edcd94;
+        right: -5px;
+        bottom: -5px;
+        color: #211F20;
+        font-size: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+    }
+
+    .option_container__products-nums.disabled {
+        display: none;
+    }
+
+    .nav_link.loginName:hover {
+        cursor: default;
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration: none;
+    }
+}
